@@ -2,8 +2,10 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  font-family: 'Noto Sans Mono';
+  font-weight: 400;
+  color: white;
 }
 
 a {
@@ -15,12 +17,90 @@ a {
   box-sizing: border-box;
 }
 
+.background {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background iframe {
+  margin: 0px;
+  border: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+header h1, header h2 {
+  text-align: center;
+}
+
+section {
+  color: #c1ffff;
+  justify-items: center;
+}
+
+section h1 {
+  font-size: large;
+}
+
+.card-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 200px;
+  margin: 4vw;
+}
+
+.card-title {
+  font-size: larger;
+}
+
+.card-date {
+  font-size: small;
+}
+
+.card-description {
+  font-size: medium;
+}
+
+p {
+  text-align: justify;
+}
+
+br {
+  margin-bottom: 1.5ex;
+}
+
+#home-container {
+  position: absolute;
+  top: 0px;
+  padding: 0 8vw;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
   body {
     color: white;
-    background: black;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #home-container {
+    padding: 0 4vw;
   }
 }
