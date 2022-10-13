@@ -18,11 +18,14 @@ export default function Home() {
 
       <main id='home-container'>
         <header>
-          <h1>Manual Override</h1>
-          <h2>Words and works of a lifelong learner</h2>
+          <div id="title-container">
+            <h1>Manual Override</h1>
+            <h2>Words and works of a lifelong learner</h2>
+            <p>Sample text.</p>
+          </div>
         </header>
-        <section>
-          <h1>Blogs</h1>
+        <section className='section-blogs'>
+          <h1 className="section-title">Blogs</h1>
           <div className='card-gallery'>
             <BlogCard 
               title="Amogus" 
@@ -36,14 +39,17 @@ export default function Home() {
             </BlogCard>
           </div>
         </section>
-        <section>
-          <h1>Featured Project</h1>
-          <ProjectCard
-            title="Doge"
-            date="2/11/2005"
-            description="much manual. very override"
-            imageSrc="https://upload.wikimedia.org/wikipedia/en/5/5f/Original_Doge_meme.jpg"
-          ></ProjectCard>
+        <section className='section-project'>
+          <h1 className="section-title">Featured Project</h1>
+          <div className='#featured-project-container'>
+            <ProjectCard
+              title="Doge"
+              date="2/11/2005"
+              description="much manual. very override"
+              imageSrc="https://upload.wikimedia.org/wikipedia/en/5/5f/Original_Doge_meme.jpg"
+              odd={true}
+            ></ProjectCard>
+          </div>
         </section>
         <footer>
 

@@ -1,0 +1,27 @@
+.card {
+  flex: 1;
+  margin: 2vw 0;
+  width: 32vw;
+  border: 2px solid #c1ffff;
+  padding: 2vw;
+}
+
+.single {
+  width: 32vw;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+.date {
+  font-size: 0.6rem;
+}
+
+.description {
+  font-size: 1rem;
+}
+
+.image {
+  width: 100%;
+}
